@@ -135,6 +135,6 @@ export default class WebAuth {
     options.returnTo = callbackUri(domain);
     options.federated = options.federated || false;
     const logoutUrl = client.logoutUrl(options);
-    return agent.show(logoutUrl, false, true);
+    return agent.show(logoutUrl, true, true);
   }
 }
